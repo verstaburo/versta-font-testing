@@ -98,6 +98,7 @@ span {
 
 a, input, button, select, textarea {
   transition: all .25s ease-in-out;
+  font-family: $font-main;
 }
 
 select, input, textarea, button {
