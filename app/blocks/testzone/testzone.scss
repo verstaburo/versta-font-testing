@@ -37,6 +37,7 @@
     line-height: 1em;
     padding-top: 2px;
     font-family: $font-main;
+    font-weight: 400;
 
     @include mobile {
       display: block;
