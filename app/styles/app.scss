@@ -7,3 +7,33 @@
 @import '../blocks/**/*';
 @import '../components/**/*';
 @import '../pages/**/*';
+
+.container {
+  padding: 0 25px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.heading-main {
+  font-size: 46px;
+  font-family: $font-second;
+  line-height: 1.5em;
+  font-weight: 400;
+
+  & + .text { margin-top: 10px; }
+
+  @include tablet {
+    font-size: 30px;
+  }
+
+  @include mobile {
+    font-size: 24px !important;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.5em;
+}

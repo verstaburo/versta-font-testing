@@ -12,7 +12,7 @@ module.exports = (watch = false) => ({
   },
   watch,
   devtool: isDebug ? 'cheap-module-inline-source-map' : false,
-  module: {
+  /*module: {
     rules: [
       {
         enforce: 'pre',
@@ -26,7 +26,7 @@ module.exports = (watch = false) => ({
         loader: 'babel-loader',
       },
     ],
-  },
+  },*/
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
@@ -34,6 +34,6 @@ module.exports = (watch = false) => ({
       },
     }),
     new webpack.NoErrorsPlugin(),
-    !isDebug ? new webpack.optimize.UglifyJsPlugin() : f => f,
+    /*!isDebug ? new webpack.optimize.UglifyJsPlugin() : f => f,*/
   ],
 });

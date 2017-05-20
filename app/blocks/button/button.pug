@@ -1,0 +1,5 @@
+mixin button(type)
+  - if (!type) { var type = 'a' }
+  +b(type).button&attributes(attributes)
+    span
+      block

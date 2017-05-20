@@ -107,3 +107,9 @@ select, input, textarea, button {
   border: 0;
   border-radius: 0; // Убираем авто-закругление углов на iOS
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: inherit;
+}

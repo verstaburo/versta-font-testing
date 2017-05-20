@@ -1,7 +1,25 @@
 extends ../../layouts/default
+include ../../components/form/form
+include ../../blocks/button/button
+include ../../blocks/inputbox/inputbox
+include ../../blocks/inputbox/inputboxtextarea
+include ../../blocks/testzone/testzone
 
 block head
   - var pageTitle = 'Versta Project Template'
 
 block content
-  +b.index
+  +b.SECTION.index
+    .container
+      h1.heading-main Test how fonts are displayed in browser
+      p.text Write name of installed font and add Typekit script if important
+      +form.__form(method="post" action="#")
+        +inputbox("Font name", "Write name of font without quotes, e.g. Arial")(type="text" name="font" required value="")
+        +inputboxtextarea("Typekit Script", "Paste code from Typekit in text area")(name="typekit")
+        +inputbox("Text for testing", "Write text to test with selected font")(type="text" name="text" required value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")
+        +inputbox("Font-weight", "e.g. 100, 200, 400, bold")(type="text" name="weight" required value="400")
+        +inputbox("Font-style", "e.g. normal, italic")(type="text" name="style" required value="normal")
+        +button('button').form__button(type="submit") Apply font
+      
+      +testzone("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua").__testzone
+  +b.scriptplace

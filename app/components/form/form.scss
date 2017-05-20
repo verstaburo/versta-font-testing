@@ -1,0 +1,16 @@
+.form {
+  width: 100%;
+  padding: 40px;
+  box-shadow: 0 25px 70px -5px rgba($color-main, .4);
+  border-radius: 2px;
+
+  &__button {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  @include mobile {
+    padding: 25px;
+  }
+}

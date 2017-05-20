@@ -1,0 +1,40 @@
+.header {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: inline-block;
+
+    &:hover {
+      transform: scale3d(0.95, 0.95, 1);
+
+      svg {
+        fill: $color-main;
+      }
+    }
+
+    svg {
+      width: 160px;
+      height: 24px;
+      transition: all .25s ease-in-out;
+      fill: #222;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1em;
+    font-weight: 600;
+    color: #b5b5b5;
+
+    @include mobile {
+      display: none;
+    }
+
+    &:hover { color: $color-main; }
+  }
+}

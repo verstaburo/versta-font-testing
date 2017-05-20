@@ -1,8 +1,12 @@
 include ../../node_modules/bemto.pug/bemto
+include ../components/header/header
 
 doctype html
 html(lang='ru')
   include head
   body
+    +header
     block content
+    script(src='assets/libs/jquery-3.2.1.min.js')
+    script(src='assets/libs/velocity.min.js')
     script(src='assets/scripts/app.min.js')
