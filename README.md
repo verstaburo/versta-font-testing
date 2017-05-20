@@ -1,3 +1,9 @@
+![Project Logo](https://verstaburo.github.io/versta-font-testing/assets/images/versta-fonts-logo.svg)
+
+# Страничка для тестирования шрифтов на баги отображения в различных размерах
+
+https://verstaburo.github.io/versta-font-testing/
+
 # Шаблон для быстрого старта проектов в студии Versta
 
 * [Как начать проект](readme/how-to-start-project.md)
@@ -9,4 +15,4 @@
 * [Различие между блоком, компонентом и страницей](readme/difference-between-block-component-page.md)
 * [Как использовать JSON данные в шаблонах](readme/how-to-use-json-data.md)
 * [Как собираются SVG спрайты](readme/how-to-svg-sprite.md)
-* [Как деплоить проект (показть заказчику)](readme/how-to-deploy.md)
+* [Как деплоить проект (показать заказчику)](readme/how-to-deploy.md)
